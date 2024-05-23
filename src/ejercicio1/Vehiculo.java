@@ -1,3 +1,6 @@
+package ejercicio1;
+
+//github 23/05/2024
 public class Vehiculo {
     String placa;
     String marca;
