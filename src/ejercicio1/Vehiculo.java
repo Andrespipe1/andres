@@ -24,16 +24,13 @@ class Publico extends Vehiculo{
         super.imprimir();
     }
 }
-class Privado extends Vehiculo{
+class Privado extends Vehiculo {
     String modelo;
     String propietario;
-    public Privado(String placa,String marca,String modelo,String propietario){
-        super(placa,marca);
-        this.modelo=modelo;
-        this.propietario=propietario;
-    }
-    @Override
-    public void imprimir() {
-        super.imprimir();
+
+    public Privado(String placa, String marca, String modelo, String propietario) {
+        super(placa, marca);
+        this.modelo = modelo;
+        this.propietario = propietario;
     }
 }
