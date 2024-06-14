@@ -21,6 +21,7 @@ public class Ticket extends Pasajero {
 
     @Override
     public void mostrarInfo(){
-        System.out.println("Cod Ticket: "+idTicket+"Fecha salida: "+fechaViaje);
+        super.mostrarInfo();
+        System.out.println("Cod Ticket: "+idTicket+" | Fecha salida: "+fechaViaje);
     }
 }

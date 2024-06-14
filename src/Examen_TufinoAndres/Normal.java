@@ -9,11 +9,12 @@ public class Normal extends Ticket{
         super(cedula, nombre, idTicket, fechaViaje);
         this.nAsiento = nAsiento;
         this.lugarAsiento=lugarAsiento;
-        this.nMaletas=nMaletas;
+        this.nMaletas=1;
     }
 
     @Override
     public void mostrarInfo(){
+        super.mostrarInfo();
         System.out.println("---Viaje normal---\nN° Asiento: "+nAsiento+"\nLugar: "+lugarAsiento+"\nMaletas: "+nMaletas);
     }
 }

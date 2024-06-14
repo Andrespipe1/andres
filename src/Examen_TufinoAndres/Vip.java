@@ -4,16 +4,22 @@ public class Vip extends Ticket{
     public int nAsiento;
     public String lugarAsiento;
     public int nMaletas;
-    public int recargo;
-    public Vip(int cedula, String nombre, int idTicket, String fechaViaje, int nAsiento,String lugarAsiento,int nMaletas, int recargo) {
+    public double recargo;
+
+    public double getRecargo() {
+        return recargo;
+    }
+
+    public Vip(int cedula, String nombre, int idTicket, String fechaViaje, int nAsiento, String lugarAsiento, int nMaletas, double recargo) {
         super(cedula, nombre, idTicket, fechaViaje);
         this.nAsiento = nAsiento;
         this.lugarAsiento=lugarAsiento;
-        this.nMaletas=nMaletas;
+        this.nMaletas=2;
         this.recargo=recargo;
     }
     @Override
     public void mostrarInfo(){
-        System.out.println("---Viaje normal---\nN° Asiento: "+nAsiento+"\nLugar: "+lugarAsiento+"\nMaletas: "+nMaletas+" Recargo del: "+recargo+"%");
+        super.mostrarInfo();
+        System.out.println("---Viaje VIP---\nN° Asiento: "+nAsiento+"\nLugar: "+lugarAsiento+"\nMaletas: "+nMaletas+" Recargo del: 30%");
     }
 }

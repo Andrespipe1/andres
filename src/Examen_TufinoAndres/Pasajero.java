@@ -16,7 +16,7 @@ public class Pasajero{
         this.nombre=nombre;
     }
     public void mostrarInfo(){
-        System.out.println("-----Datos del viaje----\n");
+        System.out.println("\n-----Datos del viaje----");
         System.out.println("Cedula: "+cedula+"\nNombre: "+nombre);
     }
 
